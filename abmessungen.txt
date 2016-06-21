@@ -1,0 +1,35 @@
+Basis Läge 29
+Basis Breite 20.2
+Basis Höhe Oben 8.5
+Plattendicke .5
+Spitzebreite 6
+Winkel seite 50grad
+Kantenlänge bis Winkel 20
+Winkelabschnittslänge 11.5
+IR Holder Höhe 17
+IR Holder Abstand von vorne 0
+Höhe Sonicholder 2.2
+Breite Sonicholder 5.1
+Höhee erster Servo 4
+Höhe zweiter Servo 4
+Tiefe erster Servo von hinten 8.5
+Tiefe zweiter Servo von hinten 8.5
+Kamera Abstand zur Mitte 3.5
+Kamera Höhe Grundstellung 4.5 ab servo
+Kamera Linse Abstand zur mittelänge 3
+radbreite 2.5
+radhöhe 9.5
+radabstand zur basis 1.3
+gesamtbreite mit rädern 27.8
+radabstand zueinander mittig 25.2
+raddurchmesser 10
+
+alu rahmen:
+hoehe abstand grundplatte 0.5
+laenge 22
+hoehe1 20
+laenge mitte 10
+laenge vorne 6
+laenge aufsatz 11
+breite aufsatz 10
+hoehe aufsatz 10
