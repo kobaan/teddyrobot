@@ -1,0 +1,6 @@
+<launch>
+<node name="rosserial_seeeduino" type="serial_node.py" pkg="rosserial_python">
+    <param name="port" value="/dev/arduino1"/>
+    <param name="baud" value="250000"/>
+</node>
+</launch>
