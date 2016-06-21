@@ -1,0 +1,9 @@
+<launch>
+	<machine name="cubie" address="10.1.1.222" env-loader="/teddy/remote-env.sh" user="root" default="true" >
+	</machine>
+
+        <node pkg="mjpeg_server" type="mjpeg_server"  name="mjpeg_server_cubie" output="screen">
+                <param name="port" type="int" value="8080" />
+        </node>
+
+</launch>
