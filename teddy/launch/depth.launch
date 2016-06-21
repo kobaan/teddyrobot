@@ -1,0 +1,3 @@
+<launch>
+	<node name="depth" pkg="pcl_ros" type="convert_pointcloud_to_image" args="input:=/points2 output:=/camera/depth/image_raw" />
+</launch>
