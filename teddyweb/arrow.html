@@ -1,0 +1,88 @@
+<html>
+<body bgcolor="#000000">
+<div id="robotMarker"></div>
+<script>
+	function createCanvas(divName) {
+
+		var div = document.getElementById(divName);
+		var canvas = document.createElement('canvas');
+		div.appendChild(canvas);
+		if (typeof G_vmlCanvasManager != 'undefined') {
+			canvas = G_vmlCanvasManager.initElement(canvas);
+		}
+		var ctx = canvas.getContext('2d');
+		return ctx;
+	}
+
+var ctx=createCanvas('robotMarker');
+var arcs=0;
+ctx.canvas.width=80;
+ctx.canvas.height=80;
+ctx.scale(0.5, 0.5);
+ctx.translate(20,20);
+
+function drawArrowAtAngle(cx,cy,angle,context){
+  context.save();
+  context.clearRect(-20,-20,context.canvas.width,context.canvas.height);
+  context.translate(cx,cx) ;
+  context.rotate(angle) ;
+  context.translate(-cx,-cx) ;
+  context.beginPath();
+  context.lineWidth = 1;
+  context.strokeStyle = '#000';
+  context.moveTo(  15, 0 );
+  context.lineTo(  0, 20 );
+  context.lineTo(  0, 50 );
+  context.lineTo(  40, 50 );
+  context.lineTo(  40, 20 );
+  context.lineTo(  25, 0 );
+  context.lineTo(  15, 0 );
+  context.stroke();
+  context.fillStyle = 'rgba(200, 0, 0, 0.5)';
+  context.fill();
+  context.closePath();
+  context.restore();
+ }
+  setInterval(function() {
+  	arcs+= 0.1;
+  	if (arcs >= Math.Pi*2) arcs=0;
+	drawArrowAtAngle(20,25,arcs,ctx);
+  }, 100);
+ </script>
+<br><br><br><br><br><br><br><br><br><br>
+<div align=center valign=top>
+<font color="grey">Audio Surveillance</font>
+<table border=1>
+<tr>
+<td width=33% align=center valign=middle><div id='micl'>||||||||||</div></td>
+<td width=33% align=center valign=middle><div id='micc'>||||||||||</div></td>
+<td width=33% align=center valign=middle><div id='micr'>||||||||||</div></td>
+</tr>
+</table>
+</div>
+<script>
+	var maxbars=10;
+	function genAudioBars(volume){
+		var barstring="<b>";
+		if (volume>0) { barstring+='<font color="green">'; };
+		for (var j=0;j<volume;j++) {
+			barstring += "|";
+		}
+		if (volume>0) { barstring+='</font>'; };
+		var darkbars = maxbars-volume;
+		if (darkbars>0) { barstring+='<font color="grey">'; };
+		for (var i=0;i<darkbars;i++) {
+			barstring += "|";
+		}
+		if (darkbars>0) { barstring+='</font>'; };
+		barstring += '</b>';
+		return barstring;
+	}
+	setInterval(function() {
+		document.getElementById('micl').innerHTML=genAudioBars(Math.ceil(Math.random()*maxbars));
+		document.getElementById('micc').innerHTML=genAudioBars(Math.ceil(Math.random()*maxbars));
+		document.getElementById('micr').innerHTML=genAudioBars(Math.ceil(Math.random()*maxbars));
+	}, 200);
+</script>
+</body>
+</html>

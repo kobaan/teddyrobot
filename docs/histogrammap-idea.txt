@@ -1,0 +1,24 @@
+Obstacle map:
+
+time weighted histogram map
+
+python numpy histogram2d
+
+ros map coordinates robot position in world map 2d x,y
+or better in surround map static to robot
+
+sonar sensor positions front left, right, back
+
+plot histogram map with x,y + obstacle + timestamp
+
+y
+|
+|  .    Oo.
+| o
+|O    B
+|
+|   ..
+|_____________x
+
+O=current o=last-second .=last-5second
+

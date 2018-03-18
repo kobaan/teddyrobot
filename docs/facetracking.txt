@@ -1,0 +1,74 @@
+ROS Face Tracking to Servo Calculations
+=========================================================================
+sensor_msgs/RegionOfInterest.msg
+=========================================================================
+# This message is used to specify a region of interest within an image.
+#
+# When used to specify the ROI setting of the camera when the image was
+# taken, the height and width fields should either match the height and
+# width fields for the associated image; or height = width = 0
+# indicates that the full resolution image was captured.
+
+uint32 x_offset  # Leftmost pixel of the ROI
+                 # (0 if the ROI includes the left edge of the image)
+uint32 y_offset  # Topmost pixel of the ROI
+                 # (0 if the ROI includes the top edge of the image)
+uint32 height    # Height of ROI
+uint32 width     # Width of ROI
+
+# True if a distinct rectified ROI should be calculated from the "raw"
+# ROI in this message. Typically this should be False if the full image
+# is captured (ROI not used), and True if a subwindow is captured (ROI
+# used).
+bool do_rectify
+=========================================================================
+Video Size example
+vx640 vy480
+=========================================================================
+ROImsg example
+x40
+y80
+h100
+w100
+rect_false
+=========================================================================
+Face center = x+w/2, y+h/2 (example: 90, 130)
+Face x_offset = x+w/2 - vx/2 (example:  90 - 640/2 = -230)
+Face y_offset = y+h/2 - vy/2 (example: 130 - 480/2 = -110)
+
+
+pan  servo x min max middle=512
+tilt servo y min max middle=512
+
+if facecenterx < vx/10 move pan servo left
+if facecenterx > vx - vx/10 move pan servo right
+if facecentery < vy/10 move tilt servo up
+if facecentery > vy - vy/10 move tilt servo down
+
+if servo y min or max no further change or drive backwards ?
+if servo x min move base left and center servo x
+if servo x max move base right and center servo x
+
+
+see: for example
+https://www.sparkfun.com/tutorials/304
+
+
+Dynamixel 12/18A:
+
+Angle conversion
+
+0-1023 steps = 0 - 300 deg = -150 - 150 deg
+511 steps = zero deg
+
+300 deg a 1024 steps = 0.29296875 deg per step
+
+
+pan limits
+250 - 750 steps
+radians(-70) to radians(70)
+
+tilt limits
+350 - 620 steps
+radians(-32) to radians(47)
+

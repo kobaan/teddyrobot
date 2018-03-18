@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>Teddy Robot Overall Status</title>
+<meta pragma=http-equiv content=no-cache>
+</head>
+<body bgcolor=black text=lightgrey>
+
+<table border=0 align=center valign=middle>
+<td>
+<div id=devices>
+<table border=1>
+<tr><th align=center valign=middle colspan=3>Devices:</th></tr>
+<tr><td align=left valign=middle>pyongyang</td><td align=center valign=middle><div id='d_pyongyang'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>cubie</td><td align=center valign=middle><div id='d_cubie'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>arduino1</td><td align=center valign=middle><div id='d_arduino1'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>arduino2</td><td align=center valign=middle><div id='d_arduino2'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>maple</td><td align=center valign=middle><div id='d_maple'></div></td><td align=center valign=middle></td></tr>
+</table>
+</div>
+</td><td>
+<div id=processes>
+<table border=1>
+<tr><th align=center valign=middle colspan=3>ROS Processes</th></tr>
+<tr><td align=left valign=middle>ROS Core</td><td align=center valign=middle><div id='r_core'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>IMU/AHRS</td><td align=center valign=middle><div id='r_ahrs'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>GPS/Client</td><td align=center valign=middle><div id='r_gps'></div></td><td align=center valign=middle>fix:true</td></tr>
+<tr><td align=left valign=middle>EKF Pose Odometry Fusion</td><td align=center valign=middle><div id='r_ekfpose'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>Stereo Cameras</td><td align=center valign=middle><div id='r_stereo'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>Stereo Depth Fusion</td><td align=center valign=middle><div id='r_stereoproc'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>Streamingserver</td><td align=center valign=middle><div id='r_mjpeg'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>OpenTLD Tracking</td><td align=center valign=middle><div id='r_otld'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>Face/Object Recognizer</td><td align=center valign=middle><div id='r_track'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>Speech Recog</td><td align=center valign=middle><div id='r_speechrecog'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>Speech Synthesis</td><td align=center valign=middle><div id='r_tts'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>SMACH</td><td align=center valign=middle><div id='r_smach'></div></td><td align=center valign=middle>state:menu</td></tr>
+<tr><td align=left valign=middle>Web Interface</td><td align=center valign=middle><div id='r_web'></div></td><td align=center valign=middle></td></tr>
+</table>
+</div>
+</td></table>
+
+<table border=0 align=center valign=middle>
+<td>
+<div id=peripherals>
+<table border=1>
+<tr><th align=center valign=middle colspan=3>Peripherals:</th></tr>
+<tr><td align=left valign=middle>Camera left</td><td align=center valign=middle><div id='p_cam_left'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>Camera right</td><td align=center valign=middle><div id='p_cam_right'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>IMU/I2C</td><td align=center valign=middle><div id='p_imu'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>GPS/Serial</td><td align=center valign=middle><div id='p_gps'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>Sonar Front</td><td align=center valign=middle><div id='p_sonar_front'></div></td><td align=center valign=middle>dist:40</td></tr>
+<tr><td align=left valign=middle>Sonar Left</td><td align=center valign=middle><div id='p_sonar_left'></div></td><td align=center valign=middle>dist:40</td></tr>
+<tr><td align=left valign=middle>Sonar Right</td><td align=center valign=middle><div id='p_sonar_right'></div></td><td align=center valign=middle>dist:40</td></tr>
+<tr><td align=left valign=middle>Sonar Back</td><td align=center valign=middle><div id='p_sonar_back'></div></td><td align=center valign=middle>dist:40</td></tr>
+<tr><td align=left valign=middle>Pan Servo</td><td align=center valign=middle><div id='p_servo_pan'></div></td><td align=center valign=middle>pos:512</td></tr>
+<tr><td align=left valign=middle>Tilt Servo</td><td align=center valign=middle><div id='p_servo_tilt'></div></td><td align=center valign=middle>pos:512</td></tr>
+<tr><td align=left valign=middle>Nose LED</td><td align=center valign=middle><div id='p_nose'></div></td><td align=center valign=middle>color:green</td></tr>
+<tr><td align=left valign=middle>Motor Controller</td><td align=center valign=middle><div id='p_motors'></div></td><td align=center valign=middle>enc1:enc2</td></tr>
+<tr><td align=left valign=middle>USB-Audio</td><td align=center valign=middle><div id='p_usbaudio'></div></td><td align=center valign=middle></td></tr>
+<tr><td align=left valign=middle>Main Audio Input</td><td align=center valign=middle><div id='p_audio_in'></div></td><td align=center valign=middle>MEMS mic middle</td></tr>
+<tr><td align=left valign=middle>Main Speakers</td><td align=center valign=middle><div id='p_speakers'></div></td><td align=center valign=middle>vol:50</td></tr>
+<tr><td align=left valign=middle>Camera left mic</td><td align=center valign=middle><div id='p_cam_mic_left'></div></td><td align=center valign=middle>val:25</td></tr>
+<tr><td align=left valign=middle>Camera right mic</td><td align=center valign=middle><div id='p_cam_mic_right'></div></td><td align=center valign=middle>val:25</td></tr>
+<tr><td align=left valign=middle>MEMS mic left</td><td align=center valign=middle><div id='p_mems_left'></div></td><td align=center valign=middle>val:25</td></tr>
+<tr><td align=left valign=middle>MEMS mic right</td><td align=center valign=middle><div id='p_mems_right'></div></td><td align=center valign=middle>val:25</td></tr>
+<tr><td align=left valign=middle>MEMS mic middle</td><td align=center valign=middle><div id='p_mems_middle'></div></td><td align=center valign=middle>val:25</td></tr>
+</table>
+</div>
+</td><td>
+
+<div id=hwmonitor>
+<table border=1>
+<tr><th align=center valign=middle colspan=2>HW Monitoring</th></tr>
+<tr><td align=left valign=middle>Cubie CPU Speed</td><td align=center valign=middle>60 MHz</td></tr>
+<tr><td align=left valign=middle>PyongYang CPU1 Speed</td><td align=center valign=middle>1.80 GHz</td></tr>
+<tr><td align=left valign=middle>PyongYang CPU2 Speed</td><td align=center valign=middle>1.80 GHz</td></tr>
+<tr><td align=left valign=middle>PyongYang CPU1 Temp</td><td align=center valign=middle>80°C</td></tr>
+<tr><td align=left valign=middle>PyongYang CPU2 Temp</td><td align=center valign=middle>80°C</td></tr>
+<tr><td align=left valign=middle>PyongYang Chassis Temp</td><td align=center valign=middle>40°C</td></tr>
+<tr><td align=left valign=middle>Maple Temp</td><td align=center valign=middle>30°C</td></tr>
+<tr><td align=left valign=middle>Pan Servo Temp</td><td align=center valign=middle>30°C</td></tr>
+<tr><td align=left valign=middle>Tilt Servo Temp</td><td align=center valign=middle>30°C</td></tr>
+<tr><td align=left valign=middle>Pan Servo Voltage</td><td align=center valign=middle>9 V</td></tr>
+<tr><td align=left valign=middle>Tilt Servo Voltage</td><td align=center valign=middle>9 V</td></tr>
+<tr><td align=left valign=middle>Motor Controller Voltage</td><td align=center valign=middle>12.8 V</td></tr>
+<tr><td align=left valign=middle>Motor Controller Temp</td><td align=center valign=middle>30°C</td></tr>
+<tr><td align=left valign=middle>Main Voltage</td><td align=center valign=middle>12.8 V</td></tr>
+<tr><td align=left valign=middle>Main Amperes</td><td align=center valign=middle>3.2 A</td></tr>
+<tr><td align=left valign=middle>Main Watts</td><td align=center valign=middle>44 W</td></tr>
+<tr><td align=left valign=middle>Disk Cubie</td><td align=center valign=middle>22% free</td></tr>
+<tr><td align=left valign=middle>Disk PyongYang</td><td align=center valign=middle>72% free</td></tr>
+<tr><td align=left valign=middle>Memory Cubie</td><td align=center valign=middle>8% free</td></tr>
+<tr><td align=left valign=middle>Memory PyongYang</td><td align=center valign=middle>60% free</td></tr>
+</table>
+</div>
+</td></table>
+
+
+<script>
+	document.getElementById('d_pyongyang').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('d_cubie').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('d_arduino1').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('d_arduino2').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('d_maple').innerHTML="<font color=lightgreen>connected</font>";
+
+	document.getElementById('r_core').innerHTML="<font color=lightgreen>running</font>";
+	document.getElementById('r_ahrs').innerHTML="<font color=lightgreen>running</font>";
+	document.getElementById('r_gps').innerHTML="<font color=lightgreen>running</font>";
+	document.getElementById('r_ekfpose').innerHTML="<font color=lightgreen>running</font>";
+	document.getElementById('r_stereo').innerHTML="<font color=lightgreen>running</font>";
+	document.getElementById('r_stereoproc').innerHTML="<font color=lightgreen>running</font>";
+	document.getElementById('r_mjpeg').innerHTML="<font color=lightgreen>running</font>";
+	document.getElementById('r_otld').innerHTML="<font color=lightgreen>running</font>";
+	document.getElementById('r_track').innerHTML="<font color=lightgreen>running</font>";
+	document.getElementById('r_speechrecog').innerHTML="<font color=lightgreen>running</font>";
+	document.getElementById('r_tts').innerHTML="<font color=lightgreen>running</font>";
+	document.getElementById('r_smach').innerHTML="<font color=lightgreen>running</font>";
+	document.getElementById('r_web').innerHTML="<font color=lightgreen>running</font>";
+
+	document.getElementById('p_cam_left').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_cam_right').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_imu').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_gps').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_sonar_front').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_sonar_left').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_sonar_right').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_sonar_back').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_servo_pan').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_servo_tilt').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_nose').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_motors').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_usbaudio').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_audio_in').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_speakers').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_cam_mic_left').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_cam_mic_right').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_mems_left').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_mems_right').innerHTML="<font color=lightgreen>connected</font>";
+	document.getElementById('p_mems_middle').innerHTML="<font color=lightgreen>connected</font>";
+</script>
+
+<!--
+amixer -c 3|egrep "^  Front|] Capture"
+arecord --device="hw:CameraB404271" -fS16 -r16000 -c4 out.wav
+arecord --device="hw:CameraB409241" -fS16 -r16000 -c4 out.wav
+arecord --device="hw:Device" -fS16 -r44100 -c1 out.wav
+aplay --device="plughw:Device" -c2 ./out.wav
+amixer --device="hw:Device" cset numid=7 on
+amixer --device="hw:Device" controls
+amixer --device="hw:Device" cget numid=6
+amixer --device="hw:Device" sget Mic
+amixer --device="hw:Device" sset Mic 16
+ /teddy/checkmic.py
+
+
+ Einkaufen
+
+ Batterien Mono 4 Stück - für Leo Mobile
+ Batterien AAA 8 Stück - für Leo Maus Lampe
+ Batterien AA 8 Stück - für Fernbedienung
+
+
+ Cubie2 74.90 http://www.exp-tech.de/Mainboards/ARM/Cubieboard-2-ARM-Board-Standard-Kit.html
+ 1W Solar http://www.lipoly.de/index.php?main_page=product_info&cPath=880_926_3257&products_id=251818
+ 3W Solar http://www.lipoly.de/index.php?main_page=product_info&cPath=880_926_3257&products_id=251821
+
+ Reichelt DS1621 I2CTemp
+
+
+
+// -->
+
+</body>
+</html>
+
+
+
+

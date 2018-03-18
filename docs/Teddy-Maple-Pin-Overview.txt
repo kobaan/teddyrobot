@@ -1,0 +1,74 @@
+Dynamixel
+via Serial1
+Pins: D7tx D8rx D14enable 5Vok
+
+I2C
+via I2C_1
+Pins: D5clk D9Dta 5Vok
+
+Emic2
+via Serial2
+Pins: D29tx D30rx 5Vok
+
+ADC LowNoise
+via CH10-15
+Pins: D15-D20
+3xMic + IR + Current + AudioOut/IN
+
+NoseRGB
+via PWM
+Pins: D24,D27,D28
+
+MouthMatrix
+via Output
+Pins: D21Data D22Clock D23Load
+
+CYCLES_PER_MICROSECOND: 72
+
+
+
+Overall Pin Assignment
+D00 Timer2 Channel4 (Sonar PulseTimer) Serial2 RX + LvlConv GPS
+D01 Timer2 Channel3 (Sonar PulseTimer) Serial2 TX + LvlConv GPS
+D02 Timer2 Channel1 (Sonar PulseTimer)
+D03 Timer2 Channel2 (Sonar PulseTimer)
+D04 
+D05 I2C Bus1 Clock (5Vok)
+D06 (5Vok) 
+D07 Dynamixel Servo Control Serial1 TX (5Vok)
+D08 Dynamixel Servo Control Serial1 RX (5Vok)
+D09 I2C Bus1 Data (5Vok)
+D10 
+D11 
+D12 
+D13 
+D14 Dynamixel Servo Control Enable (5Vok)
+D15 Microphone1 ADC CH10
+D16 Microphone2 ADC CH11
+D17 Microphone3 ADC CH12
+D18 LineIn/PCout ADC CH13
+D19 Infrared Sensor ADC CH14
+D20 Current Sensor ADC CH15
+D21 MouthMatrix Data 
+D22 MouthMatrix Clock
+D23 MouthMatrix Load
+D24 NoseLED Red PWM (5Vok)
+D25 (5Vok)
+D26 (5Vok)
+D27 NoseLED Green PWM
+D28 NoseLED Blue PWM
+D29 Emic2 TTS Serial3 TX (5Vok)
+D30 Emic2 TTS Serial3 RX (5Vok)
+D31 (EXT Interrupt Line 12) (5Vok)
+D32 (5Vok)
+D33 (5Vok)
+D34 (5Vok)
+D35 Sonar1 Echo (5Vok)
+D36 Sonar2 Echo (5Vok) 
+D37 Sonar3 Echo (5Vok) 
+D38 Sonar4 Echo (5Vok) 
+D39 Sonar1 Trigger + LvlConv (5Vok)
+D40 Sonar2 Trigger + LvlConv (5Vok)
+D41 Sonar3 Trigger + LvlConv (5Vok) 
+D42 Sonar4 Trigger + LvlConv (5Vok) 
+

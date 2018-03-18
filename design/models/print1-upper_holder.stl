@@ -1,0 +1,198 @@
+solid OpenSCAD_Model
+  facet normal 1 0 1.22461e-016
+    outer loop
+      vertex 75 34.5 15
+      vertex 75 31.5 15
+      vertex 75 31.5 9.18455e-015
+    endloop
+  endfacet
+  facet normal 1 0 1.22461e-016
+    outer loop
+      vertex 75 34.5 9.18455e-015
+      vertex 75 34.5 15
+      vertex 75 31.5 9.18455e-015
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 74.4167 31.5 3
+      vertex 75 31.5 15
+      vertex -75 31.5 15
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 74.4167 31.5 3
+      vertex 74.4167 31.5 9.11311e-015
+      vertex 75 31.5 9.18455e-015
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -75 31.5 -9.18455e-015
+      vertex -74.4167 31.5 -9.11311e-015
+      vertex -75 31.5 15
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -74.4167 31.5 -9.11311e-015
+      vertex -74.4167 31.5 3
+      vertex -75 31.5 15
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 75 31.5 9.18455e-015
+      vertex 75 31.5 15
+      vertex 74.4167 31.5 3
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -74.4167 31.5 3
+      vertex 74.4167 31.5 3
+      vertex -75 31.5 15
+    endloop
+  endfacet
+  facet normal -1.22461e-016 0 1
+    outer loop
+      vertex -75 31.5 15
+      vertex 75 31.5 15
+      vertex 75 34.5 15
+    endloop
+  endfacet
+  facet normal -1.22461e-016 0 1
+    outer loop
+      vertex -75 34.5 15
+      vertex -75 31.5 15
+      vertex 75 34.5 15
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 75 34.5 15
+      vertex 75 34.5 9.18455e-015
+      vertex -75 34.5 15
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex -75 34.5 15
+      vertex 75 34.5 9.18455e-015
+      vertex -75 34.5 -9.18455e-015
+    endloop
+  endfacet
+  facet normal 1.22461e-016 0 -1
+    outer loop
+      vertex 75 31.5 9.18455e-015
+      vertex 74.4167 31.5 9.11311e-015
+      vertex 75 34.5 9.18455e-015
+    endloop
+  endfacet
+  facet normal 1.22461e-016 0 -1
+    outer loop
+      vertex 75 34.5 9.18455e-015
+      vertex 74.4167 31.5 9.11311e-015
+      vertex 40 -57 4.89843e-015
+    endloop
+  endfacet
+  facet normal 1.22461e-016 0 -1
+    outer loop
+      vertex 75 34.5 9.18455e-015
+      vertex 40 -57 4.89843e-015
+      vertex -40 -57 -4.89843e-015
+    endloop
+  endfacet
+  facet normal 1.22461e-016 0 -1
+    outer loop
+      vertex 75 34.5 9.18455e-015
+      vertex -40 -57 -4.89843e-015
+      vertex -74.4167 31.5 -9.11311e-015
+    endloop
+  endfacet
+  facet normal 1.22461e-016 0 -1
+    outer loop
+      vertex 75 34.5 9.18455e-015
+      vertex -74.4167 31.5 -9.11311e-015
+      vertex -75 31.5 -9.18455e-015
+    endloop
+  endfacet
+  facet normal 1.22461e-016 0 -1
+    outer loop
+      vertex 75 34.5 9.18455e-015
+      vertex -75 31.5 -9.18455e-015
+      vertex -75 34.5 -9.18455e-015
+    endloop
+  endfacet
+  facet normal 0.932005 -0.362446 1.14134e-016
+    outer loop
+      vertex 74.4167 31.5 9.11311e-015
+      vertex 74.4167 31.5 3
+      vertex 40 -57 3
+    endloop
+  endfacet
+  facet normal 0.932005 -0.362446 1.14134e-016
+    outer loop
+      vertex 40 -57 4.89843e-015
+      vertex 74.4167 31.5 9.11311e-015
+      vertex 40 -57 3
+    endloop
+  endfacet
+  facet normal -1.22461e-016 0 1
+    outer loop
+      vertex 40 -57 3
+      vertex 74.4167 31.5 3
+      vertex -74.4167 31.5 3
+    endloop
+  endfacet
+  facet normal -1.22461e-016 0 1
+    outer loop
+      vertex -40 -57 3
+      vertex 40 -57 3
+      vertex -74.4167 31.5 3
+    endloop
+  endfacet
+  facet normal -0.932005 -0.362446 -1.14134e-016
+    outer loop
+      vertex -40 -57 3
+      vertex -74.4167 31.5 3
+      vertex -40 -57 -4.89843e-015
+    endloop
+  endfacet
+  facet normal -0.932005 -0.362446 -1.14134e-016
+    outer loop
+      vertex -40 -57 -4.89843e-015
+      vertex -74.4167 31.5 3
+      vertex -74.4167 31.5 -9.11311e-015
+    endloop
+  endfacet
+  facet normal -1 0 -1.22461e-016
+    outer loop
+      vertex -75 31.5 15
+      vertex -75 34.5 15
+      vertex -75 31.5 -9.18455e-015
+    endloop
+  endfacet
+  facet normal -1 0 -1.22461e-016
+    outer loop
+      vertex -75 31.5 -9.18455e-015
+      vertex -75 34.5 15
+      vertex -75 34.5 -9.18455e-015
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 40 -57 4.89843e-015
+      vertex 40 -57 3
+      vertex -40 -57 3
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -40 -57 -4.89843e-015
+      vertex 40 -57 4.89843e-015
+      vertex -40 -57 3
+    endloop
+  endfacet
+endsolid OpenSCAD_Model

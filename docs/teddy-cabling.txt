@@ -1,0 +1,35 @@
+Komplette Design Planung und Schaltpläne in Fritzing machen
+
+
+ITeadMaple
+3,3V onboard 800mA max
+USB -> Cubieboard
+3 Analog (D15-D17) -> MIC 1-3 (3,3V)
+1 Analog (D18) -> Sharp IR (auf 3,3V, da Maple nicht 5V analog kann)
+1 Serial1 (D7+8) -> 74LS241 -> Dynamixel-Bus - AX12-1+2
+1 Digital (D26) -> 74LS241 -> Dynamixel-Bus - AX12-1+2
+1 PWM (D35) -> Servo 1
+1 PWM (D36) -> Servo 2
+1 I2C D20+21 laut MapleLibDoku statt oder D14/D24(remapping) (D4/5/9 am ITead?) 5kOhm Pullups zu 3.3V dicht an SDA+SCL Pins legen
+1 SPI (D10-13)
+
+Fertiges Shield machen lassen via Fritzing:
+http://fab.fritzing.org/fritzing-fab
+
+
+Dynamixel über diese LIB Serial1 auf Maple ansteuern, sollte gehen.
+http://savageelectronics.blogspot.de/2011/08/actualizacion-biblioteca-dynamixel.html
+
+
+Cubieboard
+1 USB -> ITeadMaple
+1 USB -> Hub -> 2 PS3 Eye1+2
+
+
+
+evtl. überflüssig
+Arduino
+USB -> Cubieboard
+
+
+

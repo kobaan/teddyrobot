@@ -1,0 +1,50 @@
+
+Todo:
+check internal ip
+check prod headers
+
+
+
+
+import serial
+
+pixycam1 = serial.Serial(
+           port='/dev/ttyS0',\
+           baudrate=115200,\
+           timeout=0)
+print("connected to pixycam1 on: " + pixycam1.portstr)
+
+pixycam2 = serial.Serial(
+           port='/dev/ttyS1',\
+           baudrate=115200,\
+           timeout=0)
+print("connected to pixycam2 on: " + pixycam2.portstr)
+
+pixycam3 = serial.Serial(
+           port='/dev/ttyS2',\
+           baudrate=115200,\
+           timeout=0)
+print("connected to pixycam3 on: " + pixycam3.portstr)
+
+pixycam4 = serial.Serial(
+           port='/dev/ttyS3',\
+           baudrate=115200,\
+           timeout=0)
+print("connected to pixycam4 on: " + pixycam4.portstr)
+
+try:
+	while True:
+	    pixycam1_line = pixycam1.readline()
+	    print(str('1: ') + chr(pixycam1_line) )
+	    pixycam2_line = pixycam2.readline()
+	    print(str('2: ') + chr(pixycam2_line) )
+	    pixycam3_line = pixycam3.readline()
+	    print(str('3: ') + chr(pixycam3_line) )
+	    pixycam4_line = pixycam4.readline()
+	    print(str('4: ') + chr(pixycam4_line) )
+
+except KeyboardInterrupt:
+	pixycam1.close()
+	pixycam2.close()
+	pixycam3.close()
+	pixycam4.close()
